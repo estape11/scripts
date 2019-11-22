@@ -16,7 +16,7 @@ git checkout ProyectoFinalJacoboVM
 
 apt-get update
 apt-get install python-pip -y
-apt-get install python-pip3 -y
+apt-get install python3-pip -y
 apt-get install libopencv-dev python-opencv -y
 
 pip3 install opencv-python --user
