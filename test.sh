@@ -9,7 +9,7 @@ SCRIPT_DIR=$(pwd)
 
 if [ $UID != 0 ]; then
     echo "Error: Ejecutar como root"
-    exit 1
+    #exit 1
 fi
 
 DIR="patrones"
