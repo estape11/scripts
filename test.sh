@@ -3,16 +3,16 @@
 # Stop on the first sign of trouble
 set -e
 
+git clone https://estape11:thekillers97@gitlab.com/debruynmonge/patrones.git
+cd patrones
+git checkout ProyectoFinalJacoboVM
+
 SCRIPT_DIR=$(pwd)
 
 if [ $UID != 0 ]; then
     echo "Error: Ejecutar como root"
     exit 1
 fi
-
-git clone https://estape11:thekillers97@gitlab.com/debruynmonge/patrones.git
-cd patrones
-git checkout ProyectoFinalJacoboVM
 
 apt-get update
 apt-get install python-pip -y
