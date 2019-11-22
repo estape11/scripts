@@ -30,19 +30,19 @@ fi
 #apt-get install libopencv-dev python-opencv -y
 
 pip3 install opencv-python --user
-pip install opencv-python --user
+#pip install opencv-python --user
 
 pip3 install scikit-image --user
-pip install scikit-image --user
+#pip install scikit-image --user
 
 pip3 install sklearn --user
-pip install sklearn --user
+#pip install sklearn --user
 
 pip3 install tensorflow --user
-pip install tensorflow --user
+#pip install tensorflow --user
 
 pip3 install Keras --user
-pip install Keras --user
+#pip install Keras --user
 
 # Ejecucion
 python3 Training.py
