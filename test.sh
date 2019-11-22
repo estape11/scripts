@@ -6,7 +6,7 @@ set -e
 # Clonacion
 git clone https://estape11:thekillers97@gitlab.com/debruynmonge/patrones.git
 cd patrones
-git checkout ProyectoFinalJacoboVM
+git checkout entrenamientoservidor
 
 SCRIPT_DIR=$(pwd)
 
