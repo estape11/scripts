@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Stop on the first sign of trouble
+# Si algo sale mal se sale
 set -e
 
+# Clonacion
 git clone https://estape11:thekillers97@gitlab.com/debruynmonge/patrones.git
 cd patrones
 git checkout ProyectoFinalJacoboVM
@@ -14,6 +15,7 @@ if [ $UID != 0 ]; then
     exit 1
 fi
 
+# Dependencias
 apt-get update
 apt-get install python-pip -y
 apt-get install python3-pip -y
@@ -34,4 +36,5 @@ pip install tensorflow --user
 pip3 install Keras --user
 pip install Keras --user
 
+# Ejecucion
 python3 Training.py
