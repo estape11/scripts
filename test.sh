@@ -3,10 +3,7 @@
 # Si algo sale mal se sale
 set -e
 
-# Clonacion
-git clone https://estape11:thekillers97@gitlab.com/debruynmonge/patrones.git
-cd patrones
-git checkout entrenamientoservidor
+
 
 SCRIPT_DIR=$(pwd)
 
@@ -15,11 +12,22 @@ if [ $UID != 0 ]; then
     exit 1
 fi
 
+DIR="patrones"
+if [ -d "$DIR" ]; then
+	cd patrones
+	git checkout EntrenamientoServidor
+else
+	# Clonacion
+	git clone https://estape11:thekillers97@gitlab.com/debruynmonge/patrones.git
+	cd patrones
+	git checkout EntrenamientoServidor
+fi
+
 # Dependencias
-apt-get update
-apt-get install python-pip -y
-apt-get install python3-pip -y
-apt-get install libopencv-dev python-opencv -y
+#apt-get update
+#apt-get install python-pip -y
+#apt-get install python3-pip -y
+#apt-get install libopencv-dev python-opencv -y
 
 pip3 install opencv-python --user
 pip install opencv-python --user
