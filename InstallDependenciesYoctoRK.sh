@@ -1,3 +1,4 @@
+sudo apt-get update
 sudo apt-get install gawk wget git diffstat unzip texinfo build-essential chrpath socat cpio python python-pexpect python3-pip python3-pexpect libsdl1.2-dev xterm make xsltproc docbook-utils fop dblatex xmlto python-git libssl-dev pv -y
 
 mkdir -p Documents/rk-yocto-bsp
